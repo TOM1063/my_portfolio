@@ -28,7 +28,7 @@
 }
 
 .wrapper{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     margin: 30px auto 40px;
 }
@@ -39,4 +39,9 @@
 
 .footer{
     width: 100%;
+}
+
+
+.canvas {
+    width:100%
 }
