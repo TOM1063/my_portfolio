@@ -14,7 +14,7 @@ function preload(){
 
 function setup() {
 
-	createCanvas(1920, 1080);
+	createCanvas(windowWidth, 1080);
 
 	background(255);
 
@@ -29,25 +29,26 @@ function draw(){
 	//var c = color(img.get(current.location.x, current.location.y));
 	//var greyscale = round(red(c) * 0.222 + green(c) * 0.707 + blue(c) * 0.071);
 
-	for (var i = 0; i < balls.length; i++){
-			balls[i].draw();
-			balls[i].update();
-			//balls[i].changeColour();
-	}
-
-	for (var i = 0; i < balls.length; i++){
-			if (balls[i].radius < 0){
-					balls.splice(i, 1);
-			}
-	}
-
 	if (mouseIsPressed){
-
+        var c = color(random(255,150),random(255,150),random(255,150));
 			for (var i = 0; i < 5; i++){
-					balls.push(new Ball(mouseX, mouseY, color(random(255,100),random(255,100),random(255,100))));
+                //var c = color(10,200,250);
+				balls.push(new Ball(mouseX, mouseY, c));
 			}
 
 	}
+
+    for (var i = 0; i < balls.length; i++){
+        balls[i].draw();
+        balls[i].update();
+        //balls[i].changeColour();
+    }
+
+    for (var i = 0; i < balls.length; i++){
+        if (balls[i].radius < 0){
+                balls.splice(i, 1);
+        }
+    }
 
 }
 
@@ -101,7 +102,8 @@ class Ball{
 			draw(){
 					noStroke();
 					stroke(this.r, this.g, this.b);
+                    fill(this.r, this.g, this.b);
 					//line(this.location.x-(this.location.x*this.radius), this.location.y, this.location.x+(this.location.x*this.radius), this.location.y)
-					ellipse(this.location.x, this.location.y, this.radius * 100, this.radius * 100);
+					ellipse(this.location.x, this.location.y, this.radius * 500, this.radius * 500);
 			}
 	}
