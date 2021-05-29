@@ -95,6 +95,7 @@
     height:100%;
     background-color: white;
     margin: 0 auto 0;
+
 }
 
 .work-content-wrapper{
@@ -107,6 +108,11 @@
     text-decoration: none;
     color:rgb(104, 104, 104);
 }
+
+.work-content img {
+        width:100%;
+}
+
 
 .sumbnail {
     width:250px;
