@@ -4,7 +4,7 @@ var dist;
 var binal = [-1,1];
 
 function setup() {
-  createCanvas(windowWidth,700, WEBGL);
+  createCanvas(windowWidth, windowHeight, WEBGL);
   t = 0;
   camera(5,800,600,1,1,1);
   dist = 800;
@@ -19,7 +19,7 @@ function draw() {
   plane(dist*0.7, dist *0.7, 10, 10);
   box(dist *10, dist *1.2,100);
   if(t%10 == 1){
-    buble.push(new Ellipse(color(random(255,100),random(200,100),random(255,100),100),random(10,5)*random(binal),random(70,50), random(-dist/2,dist/2)));
+    buble.push(new Ellipse(color(random(255,100),random(200,100),random(255,100),200),random(10,5)*random(binal),random(70,50), random(-dist/2,dist/2)));
   }
   for(var i=0; i < buble.length;i++){
     buble[i].display();
