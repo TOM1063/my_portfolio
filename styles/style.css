@@ -253,7 +253,7 @@ body{
 }
 
 .skills {
-    margin-top:100px;
+    margin-top:70px;
 }
 
 .skills h3{
@@ -279,4 +279,14 @@ body{
     color: rgb(90, 90, 90);
     width:70%;
     margin: 0 auto;
+}
+}
+
+
+/* work */
+.first_img{
+    margin-top:70px;
+}
+.first_img img{
+    width: 100%; height: auto;
 }
