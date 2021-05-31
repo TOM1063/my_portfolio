@@ -1,7 +1,4 @@
 theme: jekyll-theme-slate
-sitemap:
-    path: sitemap.xml
-    template: ./stemap.xml
-    rel: false
+google_analytics: G-0XZ9CCTZK7
 plugins:
- - jekyll-sitemap
+  - jekyll-sitemap
