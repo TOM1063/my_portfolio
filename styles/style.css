@@ -125,6 +125,19 @@
 }
 
 
+/*下から上にフェードイン*/
+.down-to-top {
+    opacity: 0.1;
+    transform: translateY(20px);
+    transition: all 1s;
+  }
+  .down-to-top.scrollin {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+
 @media screen and (max-width: 480px){
 .global-nav {
     font-size : 0.7rem;
