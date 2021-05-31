@@ -128,7 +128,7 @@
 /*下から上にフェードイン*/
 .down-to-top {
     opacity: 0.1;
-    transform: translateX(100px);
+    transform: translateY(70px);
     transition: all 1s;
   }
   .down-to-top.scrollin {
