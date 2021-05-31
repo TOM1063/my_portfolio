@@ -1,30 +1,55 @@
 
+body{
+    margin: 0;
+    font-family: cormorant-garamond, serif;
+    font-weight: 700;
+    font-style: normal;
+}
 
 .header {
     width: 100%;
-    height: 50px;
-    background-color: rgb(255, 255, 255);
+    height: 70px;
+    background-color: rgb(255, 255, 255,0.7);
     display: inline-block;
+    position: fixed;
+    top:0px;
+    z-index: 2;
     
 }
 
 .logo {
     width:100px;
-    height:50px;
-    size: 50px;
+    font-size: 2rem;
     position: absolute;
-    margin-left: 70px;
+    margin-left: 30px;
+    margin-top:10px;
+    letter-spacing: 3px;
+    color: rgb(90, 90, 90);
     
+}
+.logo p{
+    margin:0;
 }
 
 .global-nav {
     text-align: center;
     width: 100%;
+    position:absolute;
+    height:100%;
+}
+
+.global-nav ul{
+    margin:0;
+    height:100%;
 }
 
 .nav-item {
     display: inline-block;
     margin: 0 10px;
+    padding-top:20px;
+    height:100%;
+    height:100%;
+    letter-spacing: 3px;
 }
 .nav-item a {
     text-decoration: none;
@@ -33,8 +58,8 @@
 
 .wrapper{
     width: 100vw;
-    height: 100vh;
-    margin: 30px auto 40px;
+    height: calc(100vh - 70px);
+    margin: 70px auto 0px;
 }
 .bio_big_name {
     size: 200px;
@@ -54,6 +79,24 @@
     letter-spacing: 10px;
     color: rgb(90, 90, 90);
 }
+
+.index_name{
+    size: 200px;
+    text-align: center;
+    width:100%;
+    position: absolute;
+    z-index: 1;
+    margin-left:auto;
+    margin-right:auto;
+    letter-spacing: 10px;
+    color: rgb(90, 90, 90);
+    margin: 0;
+    position: absolute;               /* 2 */
+    top: 50%;                         /* 3 */
+    transform: translate(0, -50%);   /* 4 */
+    /* transform: translate(0, -50%); */
+}
+
 .category-name{
     size: 200px;
     text-align: center;
@@ -112,6 +155,11 @@
     width:470px;
     padding-top:15px;
 }
+
+/* マウスオーバー */
+.work-content img:hover {
+    opacity: 0.75; /* 25％ほど透明にする */
+ }
 
 .work-content p{
     margin:14px;
@@ -202,4 +250,33 @@
 }
 .myname {
     text-align:left;
+}
+
+.skills {
+    margin-top:100px;
+}
+
+.skills h3{
+    font-size: 1rem;
+}
+.skills p{
+    font-size: 0.8rem;
+}
+.contact{
+    margin-top:100px;
+}
+.contact h3{
+    font-size:1rem;
+}
+.contact p{
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 480px){
+.profile{
+    text-align: left;
+    letter-spacing: 3px;
+    color: rgb(90, 90, 90);
+    width:70%;
+    margin: 0 auto;
 }
