@@ -59,7 +59,6 @@ body{
 
 .wrapper{
     width: 100vw;
-    height: calc(100vh - 70px);
     margin: 70px auto 0px;
 }
 .bio_big_name {
@@ -128,7 +127,6 @@ body{
 
 .work-container-wrapper{
     width:100vw;
-    height:300px;
 }
 
 .work-container{
@@ -193,7 +191,7 @@ body{
 
 @media screen and (max-width: 480px){
 .global-nav {
-    font-size : 0.7rem;
+    font-size : 0.8rem;
     height:50px;
     display:flex;
     justify-content: center;
@@ -203,7 +201,8 @@ body{
     height:50px;
     font-size: 1rem;
     position: absolute;
-    margin-left:14px;
+    margin-left:15px;
+    margin-top: 15px;
     
 }
 
@@ -252,8 +251,25 @@ body{
     width:650px;
     margin: 0 auto;
 }
+
+.face{
+    width:260px;
+    height:260px;
+}
+.face img {
+    width:100%;
+    height:auto;
+}
+
 .myname {
     text-align:left;
+}
+.intro p{
+    font-family: cormorant-garamond, serif;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-style: normal;
+    font-size:1rem;
 }
 
 .skills {
@@ -283,6 +299,12 @@ body{
     color: rgb(90, 90, 90);
     width:70%;
     margin: 0 auto;
+}
+.face{
+    width:80%;
+}
+.intro p{
+    font-size:0.7rem;
 }
 }
 
@@ -338,7 +360,7 @@ body{
     border: none; /*境界線の打ち消し*/
   }
 
-  footer{
+  .footer{
       height:70px;
   }
 
