@@ -105,6 +105,9 @@ body{
     color: rgb(90, 90, 90);
     height:100px
 }
+.category-name h1{
+    transform: translate(0, 35px);
+}
 
 .footer{
     width: 100%;
@@ -240,7 +243,7 @@ body{
 
 
 .profile_wrapper{
-    margin-top: 140px;
+    margin-top: 70px;
 }
 .profile{
     text-align: left;
