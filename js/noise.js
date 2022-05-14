@@ -17,9 +17,11 @@
 var Unit;
 var Counter;
 var MX, MY;
+var speed;
+var prev_mouseX, prev_mouseY;
 
 function setup() {
-    createCanvas(windowWidth,720)
+  createCanvas(windowWidth,720);
   Unit=128; // largest size of a square
   Counter=0;
   stroke(0);
@@ -31,6 +33,7 @@ function draw() {
   Counter+=0.002;
   MX=mouseX*0.001;
   MY=mouseY*0.001;
+  sqrt(abs(mouseX - prev_mouseX)*abs(mouseX - prev_mouseX) + abs(mouseY - prev_mouseY)*abs(mouseY - prev_mouseY));
   for (var j=0; j<height; j+=Unit) {
     for (var i=0; i<width; i+=Unit) {
       DrawRect(i, j, Unit);
@@ -44,6 +47,7 @@ function DrawRect( x,  y,  size) {
   var n=noise(cx/width-MX, cy/height-MY, mag(cx, cy)/height-Counter);
   var threshold=map(size, Unit, 4, 0.18, 0.05 );
   if (abs(n-0.5)>threshold) {
+    //stroke(map(size,Unit,4,255,0),map(size,Unit,4,0,510),map(size,Unit,4,0,255));
     rect(x, y, size, size);
   } else {
     size=size/2;
