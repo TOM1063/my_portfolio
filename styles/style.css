@@ -328,6 +328,11 @@ body{
 
 
 /* work */
+.main_work{
+    justify-content: center;
+}
+
+
 .first_img{
     margin-top:70px;
 }
@@ -339,6 +344,16 @@ body{
 }
 .second_img img{
     width: 100%; height: auto;
+}
+.third_img img{
+    width: 100%; height: auto;
+}
+.small_img img {
+    width: 50vw; height: auto;
+}
+.small_img {
+    margin: 70px auto;
+    width: 50%; height: auto;
 }
 
 
