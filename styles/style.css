@@ -60,6 +60,7 @@ body{
 .global-nav ul{
     margin:0;
     height:100%;
+    padding-left:0;
 }
 
 .nav-item {
