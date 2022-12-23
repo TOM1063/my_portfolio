@@ -389,6 +389,12 @@ body{
     font-style: normal;
 }
 
+.caption{
+    font-size: 0.7rem;
+    font-family: serif;
+    font-weight: 400;
+}
+
 .youtube{
     position: relative;
     margin: 0 auto;
