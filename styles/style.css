@@ -242,6 +242,7 @@ body{
 .work-content img {
     width:290px;
     padding-top:15px;
+    margin:0 auto;
 }
 
 .work-content p{
