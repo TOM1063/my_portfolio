@@ -350,7 +350,7 @@ body{
     width: 100%; height: auto;
 }
 .small_img img {
-    width: 50vw; height: auto;
+    width: 60vw; height: auto;
 }
 .small_img {
     margin: 70px auto;
@@ -364,6 +364,12 @@ body{
     color: rgb(90, 90, 90);
 }
 
+.sub_description{
+    width:50%;
+    margin: 50px auto;
+    color: rgb(90, 90, 90);
+}
+
 .description h3{
     font-family: cormorant-garamond, serif;
     letter-spacing: 3px;
@@ -374,6 +380,12 @@ body{
     font-family: cormorant-garamond, serif;
     letter-spacing: 3px;
     font-weight: 400;
+    font-style: normal;
+}
+.sub_description p{
+    font-family: cormorant-garamond, serif;
+    letter-spacing: 1px;
+    font-weight: 200;
     font-style: normal;
 }
 
