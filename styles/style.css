@@ -71,6 +71,7 @@ body{
     height:100%;
     letter-spacing: 3px;
 }
+
 .nav-item a {
     text-decoration: none;
     color:rgb(90, 90, 90);
@@ -170,11 +171,14 @@ body{
 .work-content a{
     text-decoration: none;
     color:rgb(104, 104, 104);
+    width:100%;
 }
 
 .work-content img {
     width:470px;
     padding-top:15px;
+    display: block;
+    margin:0 auto;
 }
 
 /* マウスオーバー */
@@ -240,6 +244,7 @@ body{
         width: 300px;
 }
 .work-content img {
+    display: block;
     width:290px;
     padding-top:15px;
     margin:0 auto;
