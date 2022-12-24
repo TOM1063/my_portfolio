@@ -79,7 +79,7 @@ body{
 
 .wrapper{
     width: 100vw;
-    margin: 120px auto 0px;
+    margin: 60px auto 0px;
 }
 .bio_big_name {
     size: 200px;
@@ -142,11 +142,11 @@ body{
     width:100%;
 }
 
-
 /*work*/
 
 .work-container-wrapper{
     width:100vw;
+    margin-top: 120px;
 }
 
 .work-container{
@@ -157,7 +157,7 @@ body{
 }
 
 .work-content{
-    width: 500px;
+    width: 600px;
     height:100%;
     background-color: white;
     margin: 0 auto 0;
@@ -175,7 +175,7 @@ body{
 }
 
 .work-content img {
-    width:470px;
+    width:570px;
     padding-top:15px;
     display: block;
     margin:0 auto;
@@ -267,7 +267,7 @@ body{
 
 
 .profile_wrapper{
-    margin-top: 70px;
+    margin-top: 120px;
 }
 .profile{
     text-align: left;
@@ -329,6 +329,10 @@ body{
     width:80%;
 }
 .intro p{
+    font-size:0.3rem;
+    letter-spacing: 0.1rem;
+}
+.skills p {
     font-size:0.7rem;
 }
 }

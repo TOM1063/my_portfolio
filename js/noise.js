@@ -21,7 +21,7 @@ var speed;
 var prev_mouseX, prev_mouseY;
 
 function setup() {
-  createCanvas(windowWidth,720);
+  createCanvas(windowWidth,windowHeight - 100);
   Unit=128; // largest size of a square
   Counter=0;
   stroke(0);
