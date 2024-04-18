@@ -1,74 +1,39 @@
+<!-- Hello ! friend ! -->
+
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
-    <meta name=“description” content=“Hi I am Tom”>
-    <meta name=“keywords” content=“Tom,Shinada,品田,十夢">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0XZ9CCTZK7"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="ritch.js"></script>
-    <script type="text/javascript" src="js/transition.js"></script>
-    <script type="text/javascript " src="ritch.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/shuffle-text@0.3.0/build/shuffle-text.min.js"></script>
-    <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-6/js/8-6.js"></script>
-    <script type=""text/javascript" src="js/shuffle.js"></script>
-
-    <!-- フォント -->
-    <link rel="stylesheet" href="https://use.typekit.net/wth2oew.css">
-    <link rel="stylesheet" href="https://use.typekit.net/jpp3oat.css">
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-0XZ9CCTZK7');
-    </script>
-    <title>Tom Shinada</title>
-    <meta charset = "UTF-8">
-    <title>Tom Shinada / 品田 十夢</title>
-    <link href="styles/style.css" rel="stylesheet" type="text/css" media="all">
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
-    <script>
-        (function(d) {
-          var config = {
-            kitId: 'tnu2iwz',
-            scriptTimeout: 3000,
-            async: true
-          },
-          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-        })(document);
-      </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css"></link>
+    <title>tom shinada</title>
+    <!-- <script src="https://code.createjs.com/1.0.0/tweenjs.min.js"></script>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script> -->
+    <!-- <script src="
+https://cdn.jsdelivr.net/npm/tweenjs@1.0.2/lib/tweenjs.min.js
+"></script> -->
 </head>
-<body class="body">
-    <div class="is-loading">
-        <div class="loading">
-        </div>
+<body>
+    <div class="name_container">
+        <a class="name" id = "t" href="bio.html">T</a>
+        <p class="name" id="o">O</p>
+        <p class="name" id="m">M</p>
     </div>
-    <header class="header">
-        <div class="logo">
-            <p>t.</p>
-        </div>
-        <nav class="global-nav">
-            <ul>
-                <li class="nav-item"><a href="index.html">home</a></li>
-                <li class="nav-item"><a href="bio.html">bio</a></li>
-                <li class="nav-item"><a href="work.html">works</a></li>
-            </ul>
-        </div>
-    </header>
-    <div class="wrapper">
-        <main class="main">
-            <div class="index_name">
-                <h1 class="js_typing">Tom Shinada</h1>
-            </div>
-        </main>
-    </div>
-    <hooter class="footer">
-    </hooter>
+    <a class="icon" id = "camera" href="photos.html">
+        <div class="icon-img" id="camera-img">📷</div>
+    </a>
+    <a class="icon" id="make" href="make.html">
+    </a>
+    <a class="icon" id="pc" href="works.html">
+        <span class="icon-img" id="pc-img">🖥️</span>
+    </a>
+    <a class="icon" id="random" href="random.html">
+        <p>🥠</p>
+    </a>
+    <p id="index-comment">always under<br>construction...</p>
+    <!-- <a class="icon" id="flower" href="flower.html">
+        <p>🌻</p>
+    </a> -->
+    <script src="index_motion_mouse.js" type="module"></script>
 </body>
-<div class="background">
-    <script src='js/noise.js' class="canvas"></script>
-</div>
 </html>

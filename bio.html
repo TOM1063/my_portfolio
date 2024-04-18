@@ -1,67 +1,49 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
-    <meta charset = "UTF-8">
-    <title>Tom Shinada</title>
-    <link href="styles/style.css" rel="stylesheet" type="text/css" media="all">
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/transition.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r120/three.min.js"></script>
-    <script src="js/face.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="https://use.typekit.net/wth2oew.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css"></link>
+    <title>bio</title>
 </head>
-<body class="body">
-    <div class="is-loading">
-        <div class="loading">
+<body>
+    <div class="self_img">
+        <img src="imgs/self4.jpeg">
     </div>
+
+    <div class="bio_name">
+        <p class="title">
+            Tom Shinada
+        </p>
     </div>
-    <header class="header">
-        <div class="logo">
-            <p>t.</p>
-        </div>
-        <nav class="global-nav">
-            <ul>
-                <li class="nav-item"><a href="index.html">home</a></li>
-                <li class="nav-item"><a href="bio.html">bio</a></li>
-                <li class="nav-item"><a href="work.html">works</a></li>
-            </ul>
-        </div>
-    </header>
-    <div class="wrapper">
-        <main class="main">
-            <!-- <canvas id="myCanvas"></canvas> -->
-            <div class="profile_wrapper">
-                <div class="profile">
-                    <div class="intro">
-                        <div class="face">
-                            <img src="img/imtom.jpg">
-                        </div>
-                        <h3 class="myname">品田 十夢 / Tom Shinada</h3>
-                        <p>2022-6 <br>隈建築奨学財団第２期生として研究活動開始</p>
-                        <p>2022-4 <br>東京理科大学理工学研究科建築学専攻<br>西田研究室所属</p>
-                        <p>2022-3 <br>東京理科大学理工学部建築学科卒業</p>
-                        <p>2022-3 <br>野田建築会NAA賞受賞</p>
-                    </div>
-                    <div class="skills">
-                        <h3>Skills</h3>
-                        <p>インタラクティブ製作 <br>TouchDesigner / Unity / OpenFrameworks / Processing</p>
-                        <p>プラグイン開発 <br>Revit・Dynamo / Rhinoceros・Grasshopper / Python</p>
-                        <p>ソフト・ハードをまたぐ技術ディレクション</p>
-                    </div>
-                    <div class="contact">
-                        <h3>Contact</h3>
-                        <p>Email : tomshina.arch@gmail.com</p>
-                        <a href="https://www.instagram.com/tom_shinada/">Instagram</a>
-                    </div>
-                </div>
-            </div>
-            <div class="background">
-            </div>
-        </main>
+    <div class="history">
+        <p>
+            I'm seeking "media architecture",that serves as an interface for people living with material / immaterial things.
+        </p>
     </div>
-    <footer class="footer">
-    </footer>
+    <p>2022-6 <br>Kuma Architecture Scholarship for the 2nd generation</p>
+                        <p>2022-4 <br>Master's degree at Tokyo University of Science <br>Nishida Lab</p>
+                        <p>2022-3 <br>Graduated Tokyo University Of Sciense</p>
+                        <p>2022-3 <br>NAA prize</p>
+                        <p>2019-3 <br>CS Design award</p>
+    <div class="contact">
+        <p class="title">Contact<p>
+        <p>Email : tomshina.arch@gmail.com</p>
+        <a href="https://www.instagram.com/tom_shinada/">Instagram</a>
+    </div>
+    <!-- <a class="icon" id = "camera" href="works.html">
+        <span class="icon-img" id="camera-img">📷</span>
+    </a>
+    <a class="icon" id="pc">
+    </a>
+    <a class="icon" id="make" href="make.html">
+    </a>
+    <a class="icon" id="random" href="random.html">
+        <p>🥠</p>
+    </a> -->
+    <a class="home" href="index.html">
+        <p>🏠</p>
+    </a>
+    <script src="index_motion_mouse.js" type="module"></script>
 </body>
 </html>
