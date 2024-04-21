@@ -75,10 +75,36 @@ random.addEventListener("click", function () {
     "works/space_delivery.html",
     "works/tree_hack.html",
     "works/voices_climate.html",
+    "https://www.instagram.com/tom_shinada/",
+    "https://qiita.com/TOM1063",
+    "https://qiita.com/TOM1063/items/a6a35aa83be92262778f",
+    "https://www.mixcloud.com/TomShinada/",
   ];
+
+  var google_list = [
+    "grass",
+    "cat",
+    "dog",
+    "sky",
+    "cloud",
+    "sun",
+    "rain",
+    "The Beatles",
+    "Lucio Battisti",
+  ];
+  var prefix = "https://www.google.com/search?q=";
+  var safix =
+    "&hl=ja&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjUiva31_bxAhXIEXAKHdEJBL0Q_AUoA3oECAgQBQ&biw=1286&bih=1303&dpr=2";
+
+  google_list.forEach(function (string, index, array) {
+    array[index] = prefix + string + safix;
+  });
+
+  html_list = html_list.concat(google_list);
+
   var selector = getRandomInt(html_list.length);
   var ref_to_go = html_list[selector];
-  console.log("selected", ref_to_go);
+  console.log("selected", selector);
 
   ref_to_go = ref_to_go;
   window.location.href = ref_to_go;
