@@ -67,14 +67,6 @@ random.addEventListener("mouseleave", function () {
 
 random.addEventListener("click", function () {
   var html_list = [
-    "works.html",
-    "photos.html",
-    "bio.html",
-    "works/climate_view.html",
-    "works/haru.html",
-    "works/space_delivery.html",
-    "works/tree_hack.html",
-    "works/voices_climate.html",
     "https://www.instagram.com/tom_shinada/",
     "https://qiita.com/TOM1063",
     "https://qiita.com/TOM1063/items/a6a35aa83be92262778f",
@@ -83,14 +75,15 @@ random.addEventListener("click", function () {
 
   var google_list = [
     "種差海岸",
-    "cute cat",
+    "Discovery By Gigi",
     "cute dog",
     "c35ef",
     "A1ミュージック",
     "the sun",
-    "rain",
+    "城の目",
     "The Beatles",
     "Lucio Battisti",
+    "fortune cookie",
   ];
   var prefix = "https://www.google.com/search?q=";
   var safix =
@@ -101,6 +94,7 @@ random.addEventListener("click", function () {
   });
 
   html_list = html_list.concat(google_list);
+  html_list = google_list;
 
   var selector = getRandomInt(html_list.length);
   var ref_to_go = html_list[selector];
