@@ -87,7 +87,7 @@ random.addEventListener("click", function () {
     "cute dog",
     "sky",
     "A1ミュージック",
-    "sun",
+    "the sun",
     "rain",
     "The Beatles",
     "Lucio Battisti",
