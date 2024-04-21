@@ -82,11 +82,11 @@ random.addEventListener("click", function () {
   ];
 
   var google_list = [
-    "grass",
-    "cat",
-    "dog",
+    "種差海岸",
+    "cute cat",
+    "cute dog",
     "sky",
-    "cloud",
+    "A1ミュージック",
     "sun",
     "rain",
     "The Beatles",
