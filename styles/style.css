@@ -94,6 +94,7 @@ a {
 
 #random {
     position: absolute;
+    margin-left:10px;
 }
 
 #index-comment {
@@ -107,6 +108,11 @@ a {
     
 }
 
+#hover {
+    visibility: hidden;
+    position: relative;
+    margin-left:10px;
+}
 
 
 .page_title {
@@ -115,6 +121,13 @@ a {
 
 .black {
     color:black;
+}
+
+
+@media screen and (max-width: 768px) {
+    #hover {
+    visibility: visible;
+    }
 }
 
 

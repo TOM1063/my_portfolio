@@ -54,6 +54,36 @@ var camera_motion = getArrayFromCSV("data/camera.csv");
 var make_motion = getArrayFromCSV("data/make.csv");
 var pc_motion = getArrayFromCSV("data/pc.csv");
 
+var hover = document.getElementById("hover");
+
+random.addEventListener("mouseover", function () {
+  console.log("test");
+  hover.style.setProperty("visibility", "visible");
+});
+
+random.addEventListener("mouseleave", function () {
+  hover.style.setProperty("visibility", "hidden");
+});
+
+random.addEventListener("click", function () {
+  var html_list = [
+    "works.html",
+    "photos.html",
+    "bio.html",
+    "works/climate_view.html",
+    "works/haru.html",
+    "works/space_delivery.html",
+    "works/tree_hack.html",
+    "works/voices_climate.html",
+  ];
+  var selector = getRandomInt(html_list.length);
+  var ref_to_go = html_list[selector];
+  console.log("selected", ref_to_go);
+
+  ref_to_go = ref_to_go;
+  window.location.href = ref_to_go;
+});
+
 function moveElemAlongPath(_elem, _array, _frame) {
   var repeated_frame = _frame % _array.length;
   var current_data = _array[repeated_frame];
@@ -99,4 +129,8 @@ function getArrayFromCSV(url) {
   console.log(csvArray);
 
   return csvArray;
+}
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
 }
