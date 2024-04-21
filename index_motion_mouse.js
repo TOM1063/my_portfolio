@@ -85,7 +85,7 @@ random.addEventListener("click", function () {
     "種差海岸",
     "cute cat",
     "cute dog",
-    "sky",
+    "c35ef",
     "A1ミュージック",
     "the sun",
     "rain",
