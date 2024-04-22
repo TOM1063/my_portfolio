@@ -4,6 +4,9 @@ var sc_width = window.innerWidth;
 var sc_height = window.innerHeight;
 
 var frame = 0;
+
+//main loop
+
 function animate() {
   requestAnimationFrame(animate);
 
@@ -39,8 +42,9 @@ function animate() {
 
   frame += 1;
 }
-
 requestAnimationFrame(animate);
+
+//elements
 
 var camera = document.getElementById("camera");
 var camera_img = document.getElementById("camera-img");
@@ -55,6 +59,8 @@ var make_motion = getArrayFromCSV("data/make.csv");
 var pc_motion = getArrayFromCSV("data/pc.csv");
 
 var hover = document.getElementById("hover");
+
+//events
 
 random.addEventListener("mouseover", function () {
   console.log("test");
@@ -110,6 +116,8 @@ random.addEventListener("click", function () {
   ref_to_go = ref_to_go;
   window.location.href = ref_to_go;
 });
+
+//functions
 
 function moveElemAlongPath(_elem, _array, _frame) {
   var repeated_frame = _frame % _array.length;
