@@ -75,6 +75,13 @@ random.addEventListener("click", function () {
 
   var google_list = [
     "種差海岸",
+    "宮代 進修館",
+    "空想科学読本",
+    "あなたの人生の物語",
+    "虹のマート",
+    "中みそ",
+    "利根運河",
+    "古利根公園橋",
     "Discovery By Gigi",
     "cute dog",
     "c35ef",
