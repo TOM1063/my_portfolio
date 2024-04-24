@@ -31,7 +31,7 @@ function animate() {
   sc_height = window.innerHeight;
 
   var camera_acction = moveElemAlongPath(
-    camera_img,
+    camera,
     camera_motion,
     Math.floor(frame)
   );
@@ -45,14 +45,14 @@ function animate() {
 
   var make_acction = moveElemAlongPath(make, make_motion, Math.floor(frame));
   if (make_acction == 1) {
-    make.innerHTML = "🔨clang!";
-    make.style.setProperty("background-color", "white");
+    make_img.innerHTML = "🔨clang!";
+    make_img.style.setProperty("background-color", "white");
   } else {
-    make.innerHTML = "🔨";
-    make.style.setProperty("background-color", "rgba(0,0,0,0)");
+    make_img.innerHTML = "🔨";
+    make_img.style.setProperty("background-color", "rgba(0,0,0,0)");
   }
 
-  typeElement(pc, pc_motion, Math.floor(frame), "🖥️");
+  typeElement(pc_img, pc_motion, Math.floor(frame), "🖥️");
 
   name_t.style.setProperty(
     "transform",
@@ -72,7 +72,11 @@ var camera = document.getElementById("camera");
 var camera_img = document.getElementById("camera-img");
 
 var pc = document.getElementById("pc");
+var pc_img = document.getElementById("pc-img");
+
 var make = document.getElementById("make");
+var make_img = document.getElementById("make-img");
+
 var random = document.getElementById("random");
 var name_t = document.getElementById("t");
 
@@ -100,6 +104,11 @@ pc.addEventListener("click", function () {
 camera.addEventListener("click", function () {
   window.location.href = "photos.html";
   console.log("clicked photos");
+});
+
+make.addEventListener("click", function () {
+  window.location.href = "https://computerlife.stores.jp";
+  console.log("clicked make");
 });
 
 random.addEventListener("click", function () {
@@ -167,9 +176,10 @@ function typeElement(_elem, _array, _frame, _initial) {
   _elem.innerHTML = _initial + " " + text;
 
   if (text == "") {
-    _elem.style.setProperty("background-color", "rgba(0,0,0,0)");
+    _elem;
+    _elem.parentNode.style.setProperty("background-color", "rgba(0,0,0,0)");
   } else {
-    _elem.style.setProperty("background-color", "rgba(255,255,255)");
+    _elem.parentNode.style.setProperty("background-color", "rgba(255,255,255)");
   }
   var acction = current_data[4];
   return acction;

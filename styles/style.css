@@ -62,13 +62,25 @@ a {
     font-size:2rem;
     position: absolute;
     display:block;
+    cursor : pointer;
     /* text-shadow: 0px 0px 20px rgb(0, 0, 0); */
 }
 
-.icon-img {
-    position: absolute;
-    /* cursor:none; */
+#camera-img {
+    z-index: 100 !important;
+    pointer-events: none;
 }
+
+#make-img {
+    z-index: 100 !important;
+    pointer-events: none;
+}
+
+#pc-img {
+    z-index: 100 !important;
+    pointer-events: none;
+}
+
 
 
 .link {
