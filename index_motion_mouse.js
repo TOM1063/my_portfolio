@@ -4,16 +4,37 @@ var sc_width = window.innerWidth;
 var sc_height = window.innerHeight;
 
 var frame = 0;
+var frame_factor = 1.0;
+
+var target_fps = 60;
+
+var time_start = performance.now();
+var prev_caputred_frame = 0;
 
 //main loop
 
 function animate() {
-  requestAnimationFrame(animate);
+  var time_end = performance.now();
+  if (time_end - time_start >= 1000) {
+    var actural_fps = frame - prev_caputred_frame;
+    console.log("fps:", actural_fps);
+
+    if (actural_fps > 100) {
+      frame_factor = 0.5;
+    }
+
+    time_start = time_end;
+    prev_caputred_frame = frame;
+  }
 
   sc_width = window.innerWidth;
   sc_height = window.innerHeight;
 
-  var camera_acction = moveElemAlongPath(camera_img, camera_motion, frame);
+  var camera_acction = moveElemAlongPath(
+    camera_img,
+    camera_motion,
+    Math.floor(frame)
+  );
   if (camera_acction == 1) {
     camera_img.innerHTML = "📸 click!";
     camera_img.style.setProperty("background-color", "white");
@@ -22,16 +43,16 @@ function animate() {
     camera_img.style.setProperty("background-color", "rgba(0,0,0, 0)");
   }
 
-  var make_acction = moveElemAlongPath(make, make_motion, frame);
+  var make_acction = moveElemAlongPath(make, make_motion, Math.floor(frame));
   if (make_acction == 1) {
     make.innerHTML = "🔨clang!";
     make.style.setProperty("background-color", "white");
   } else {
     make.innerHTML = "🔨";
-    make.style.setProperty("background-color", "rgba(0,0,0, 0)");
+    make.style.setProperty("background-color", "rgba(0,0,0,0)");
   }
 
-  typeElement(pc, pc_motion, frame, "🖥️");
+  typeElement(pc, pc_motion, Math.floor(frame), "🖥️");
 
   name_t.style.setProperty(
     "transform",
@@ -40,7 +61,8 @@ function animate() {
 
   random.style.setProperty("transform", "rotate(" + (frame % 360) + "deg)");
 
-  frame += 1;
+  frame += frame_factor;
+  requestAnimationFrame(animate);
 }
 requestAnimationFrame(animate);
 
