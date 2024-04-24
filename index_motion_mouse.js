@@ -93,6 +93,15 @@ random.addEventListener("mouseleave", function () {
   hover.style.setProperty("visibility", "hidden");
 });
 
+pc.addEventListener("click", function () {
+  window.location.href = "works.html";
+});
+
+camera.addEventListener("click", function () {
+  window.location.href = "photos.html";
+  console.log("clicked photos");
+});
+
 random.addEventListener("click", function () {
   var html_list = [
     "https://www.instagram.com/tom_shinada/",
@@ -135,7 +144,6 @@ random.addEventListener("click", function () {
   var ref_to_go = html_list[selector];
   console.log("selected", selector);
 
-  ref_to_go = ref_to_go;
   window.location.href = ref_to_go;
 });
 
