@@ -135,17 +135,20 @@ a {
 
 
 /*-------------------------- bio-------------------------- */
+.bio-container {
+    padding-left:100px;
+    padding-top:100px;
+}
 
-.self_img {
+.self-img {
     width:200px;
     height:200px;
 }
 
-.self_img img {
+.self-img img {
     width:200px;
     height:200px;
 }
-
 
 
 .title {
@@ -163,6 +166,13 @@ a {
     font-size:2rem;
     text-decoration: none;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .bio-container {
+        padding-left:0;
+        padding-top:0;
+    }
 }
 
 
