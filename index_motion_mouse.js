@@ -113,10 +113,11 @@ make.addEventListener("click", function () {
 
 random.addEventListener("click", function () {
   var html_list = [
-    "https://www.instagram.com/tom_shinada/",
-    "https://qiita.com/TOM1063",
-    "https://qiita.com/TOM1063/items/a6a35aa83be92262778f",
-    "https://www.mixcloud.com/TomShinada/",
+    "https://cruel.org/freeware/hacker.html#believe2",
+    // "https://www.instagram.com/tom_shinada/",
+    // "https://qiita.com/TOM1063",
+    // "https://qiita.com/TOM1063/items/a6a35aa83be92262778f",
+    // "https://www.mixcloud.com/TomShinada/",
   ];
 
   var google_list = [
@@ -147,7 +148,7 @@ random.addEventListener("click", function () {
   });
 
   html_list = html_list.concat(google_list);
-  html_list = google_list;
+  // html_list = google_list;
 
   var selector = getRandomInt(html_list.length);
   var ref_to_go = html_list[selector];
