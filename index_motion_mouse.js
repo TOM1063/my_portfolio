@@ -88,28 +88,28 @@ var hover = document.getElementById("hover");
 
 //events
 
-random.addEventListener("mouseover", function () {
-  console.log("test");
-  hover.style.setProperty("visibility", "visible");
-});
+// random.addEventListener("mouseover", function () {
+//   console.log("test");
+//   hover.style.setProperty("visibility", "visible");
+// });
 
-random.addEventListener("mouseleave", function () {
-  hover.style.setProperty("visibility", "hidden");
-});
+// random.addEventListener("mouseleave", function () {
+//   hover.style.setProperty("visibility", "hidden");
+// });
 
-pc.addEventListener("click", function () {
-  window.location.href = "works.html";
-});
+// pc.addEventListener("click", function () {
+//   window.location.href = "works.html";
+// });
 
-camera.addEventListener("click", function () {
-  window.location.href = "photos.html";
-  console.log("clicked photos");
-});
+// camera.addEventListener("click", function () {
+//   window.location.href = "photos.html";
+//   console.log("clicked photos");
+// });
 
-make.addEventListener("click", function () {
-  window.location.href = "https://computerlife.stores.jp";
-  console.log("clicked make");
-});
+// make.addEventListener("click", function () {
+//   window.location.href = "https://computerlife.stores.jp";
+//   console.log("clicked make");
+// });
 
 random.addEventListener("click", function () {
   var html_list = [
