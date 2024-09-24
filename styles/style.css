@@ -1,8 +1,9 @@
 html {
     height: 100vh;
     z-index: -100;
-    background-color: rgb(0, 0, 255);
-    font-family:'Courier New', Courier, monospace;
+    background-color: rgb(162, 162, 162);
+    font-family:'Courier New', Courier, monospace,"source-han-serif-jp-variable", sans-serif;
+font-variation-settings: "wght" 250;
     color:rgb(255, 255, 255);
 }
 
@@ -41,6 +42,9 @@ a {
     font-size: 10rem;
     transform: rotate(90 deg);
 }
+#t:hover {
+    color:rgb(94, 94, 94);
+}
 #o {
     margin-top: 50vh;
     text-align: center;
@@ -70,6 +74,10 @@ a {
     /* z-index: 100 !important; */
     pointer-events: none;
 }
+.icon:hover {
+    font-size:3rem;
+    background-color: rgb(255, 255, 255);
+}
 
 #make-img {
     /* z-index: 100 !important; */
@@ -96,6 +104,9 @@ a {
     /* bottom:200px; */
     /* margin-left: 10vw; */
     position: absolute;
+}
+#pc:hover {
+    color:rgb(255, 0, 0);
 }
 
 #flower {
@@ -227,7 +238,7 @@ a {
 
 /*-------------------------- works-------------------------- */
 .bg_blue {
-    background-color: rgb(0, 0, 255);
+    background-color: rgb(162, 162, 162);
     display: flex;
 }
 
@@ -239,7 +250,7 @@ a {
     /* display: box;
     justify-content: center; */
     padding-top: 100px;
-    margin-left: 10vw;
+    margin-left: 20vw;
     /* width:calc(30vw + 100px) */
 }
 
@@ -259,8 +270,9 @@ a {
 
 
 .descr {
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.4rem;
     margin-left: 10px;
+    font-size: 0.8rem;
 /* width:50vw; */
     padding-left: 10px;
     padding-right: 10px;
@@ -269,8 +281,14 @@ a {
 
 .work-title {
     font-size: 1rem;
-    color:rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0.367);
+    /* color:rgb(0, 2, 148); */
+    color:white;
+    /* background-color: rgba(255, 255, 255, 0.636); */
+}
+.work-title:hover {
+    color:rgb(0, 2, 148);
+    background-color: rgba(255, 255, 255, 0.636);
+
 }
 
 
@@ -303,12 +321,12 @@ a {
 .work-name {
     margin:0 auto;
     margin-top:150px;
-    margin-bottom:10px;
+    margin-bottom:40px;
     width:60vw;
 }
 .work-text {
     margin:0 auto;
-    margin-top:40px;
+    margin-top:20px;
     margin-bottom:40px;
     width:60vw;
     font-size: 0.8rem;
@@ -317,7 +335,8 @@ a {
 
 .ja {
     font-family: serif;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.15rem;
+    margin-bottom:20px;
 }
 
 .movie {
