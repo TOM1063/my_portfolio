@@ -461,6 +461,9 @@ a {
         line-height: 0.9rem;
         letter-spacing: 0.01rem;
     }
+    .ja {
+        line-height: 1.2rem;
+    }
 
     .movie {
         width:100vw;
