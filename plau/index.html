@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>studio plau</title>
+      <link rel="stylesheet" href="./styles/style.css">
+      <!-- googlefonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+      <!-- script -->
+       <script src="main.js"></script>
+       <script type="importmap">
+            {
+                  "imports": {
+                    "three": "https://cdn.jsdelivr.net/npm/three@0.173.0/build/three.module.js",
+                    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.173.0/examples/jsm/"
+                  }
+                }
+        </script>
+        <!-- <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script> -->
+        <script src="three/main.js" type="module"></script>
+</head>
+<body>
+      <div class="page_wrapper theme_font">
+            <div class="content">
+                  <hgroup class="title_container">
+                        <h1 class="title">studio plau</h1>
+                  </hgroup>
+                  <div class="description">
+                        <p class="work_example" id="index_1">Rhinoceros, Grasshopperを用いたアルゴリズミックデザイン/設計補助ツール</p>
+                        <p class="work_example" id="index_2">BIM効率化</p>
+                        <p class="work_example" id="index_3">CNC制御プログラム/プロダクト制作</p>
+                        <p class="work_example" id="index_4">独自ツールによるデータジュアライゼーション</p>
+                        <p class="work_example" id="index_5">webサイト/アプリケーション</p>
+                        <p class="work_example" id="index_6">インタラクティブ展示ディレクション</p>
+                  </div>
+                  <div class="mail_container">
+                        <a class="mail" href="mailto:tomshinada.plau@gmail.com"> tomshinada.plau@gmail.com</a>
+                  </div>
+            </div>
+            <canvas id="canvas">
+            </canvas>
+      </div>
+</body>
+</html>

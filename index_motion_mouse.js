@@ -111,52 +111,6 @@ var hover = document.getElementById("hover");
 //   console.log("clicked make");
 // });
 
-random.addEventListener("click", function () {
-  var html_list = [
-    "https://cruel.org/freeware/hacker.html#believe2",
-    // "https://www.instagram.com/tom_shinada/",
-    // "https://qiita.com/TOM1063",
-    // "https://qiita.com/TOM1063/items/a6a35aa83be92262778f",
-    // "https://www.mixcloud.com/TomShinada/",
-  ];
-
-  var google_list = [
-    "種差海岸",
-    "宮代 進修館",
-    "空想科学読本",
-    "あなたの人生の物語",
-    "虹のマート",
-    "中みそ",
-    "利根運河",
-    "古利根公園橋",
-    "Discovery By Gigi",
-    "cute dog",
-    "c35ef",
-    "A1ミュージック",
-    "the sun",
-    "城の目",
-    "The Beatles",
-    "Lucio Battisti",
-    "fortune cookie",
-  ];
-  var prefix = "https://www.google.com/search?q=";
-  var safix =
-    "&hl=ja&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjUiva31_bxAhXIEXAKHdEJBL0Q_AUoA3oECAgQBQ&biw=1286&bih=1303&dpr=2";
-
-  google_list.forEach(function (string, index, array) {
-    array[index] = prefix + string + safix;
-  });
-
-  html_list = html_list.concat(google_list);
-  // html_list = google_list;
-
-  var selector = getRandomInt(html_list.length);
-  var ref_to_go = html_list[selector];
-  console.log("selected", selector);
-
-  window.location.href = ref_to_go;
-});
-
 //functions
 
 function moveElemAlongPath(_elem, _array, _frame) {
@@ -205,8 +159,4 @@ function getArrayFromCSV(url) {
   console.log(csvArray);
 
   return csvArray;
-}
-
-function getRandomInt(max) {
-  return Math.floor(Math.random() * max);
 }
