@@ -1,130 +1,91 @@
+
+Redirect · HTML
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css"></link>
-    <script>
-        (function(d) {
-          var config = {
-            kitId: 'dfx5dlw',
-            scriptTimeout: 3000,
-            async: true
-          },
-          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-        })(document);
-      </script>
-    <title>works</title>
+  <meta charset="UTF-8">
+  <title>ページが移転しました</title>
+ 
+  <!-- 3秒後に自動的に新URLへ移動 -->
+  <meta http-equiv="refresh" content="3; url=https://tomshinada.jp/works.html">
+ 
+  <!-- 検索エンジンに移転を伝える(SEO対策) -->
+  <link rel="canonical" href="https://tomshinada.jp/works.html">
+ 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+ 
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans", Meiryo, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+    }
+ 
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 48px 32px;
+      max-width: 420px;
+      width: 100%;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    }
+ 
+    h1 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+ 
+    p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 28px;
+    }
+ 
+    a.btn {
+      display: inline-block;
+      background: #222;
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 32px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+    }
+ 
+    a.btn:hover {
+      opacity: 0.8;
+    }
+ 
+    .note {
+      margin-top: 20px;
+      font-size: 0.8rem;
+      color: #999;
+    }
+  </style>
 </head>
-<body class="bg_blue">
-    <div class="works">
-        <p class="page_title white">🖥️ works</p>
-        <p class="works-section-title">CNC Furniture</p>
-        <a class="work" href="works/table.html">
-            <img src="imgs/works/table/flow.png" width="300px" class="work-img">
-            <div class="descr">
-                <p class="work-title">てとてテーブル Handshake Table<br></p>
-                <p class="work-date">
-                    Sep 24, 2024 / 東京理科大学理工学キャンパス製図室整備
-                    <br><br>
-                </p>
-            </div>
-        </a>
-        <p class="works-section-title">Media Architecture</p>
-        <a class="work" href="works/sakurastage.html">
-            <img src="imgs/works/sakurastage/hidden_shapes_2.jpeg" width="200px" class="work-img">
-            <div class="descr">
-                <p class="work-title">BIM Art Project<br> 「hidden shapes」</p>
-                <p class="work-date">
-                    August 24, 2024 /  CIVIC CREATIVE CANVAS WS
-                </p>
-            </div>
-        </a>
-        <a class="work" href="works/kaibou.html">
-            <img src="imgs/works/kaibou1.png" width="200px" class="work-img">
-            <div class="descr">
-                <p class="work-title">architecture anatomy</p>
-                <p class="work-date">
-                    April, 2022/  personal project
-                </p>
-            </div>
-        </a>
-        <a class="work" href="works/enoniwa.html">
-            <img src="imgs/works/Enoniwa/enoniwa_exhib.JPG" width="200px" class="work-img">
-            <div class="descr">
-                <p class="work-title">Enoniwa<br>  筆跡を介した地域内対話ツール</p>
-                <p class="work-date">
-                    Sep 24, 2024 / Gallery IOI, Akabane
-                    <br><br>
-                </p>
-            </div>
-        </a>
-        <a class="work" href="works/voices_climate.html">
-            <img src="imgs/works/20240331_104211.GIF" width="200px" class="work-img">
-            <div class="descr">
-                <p class="work-title">climate voices <br>/ voices climate</p>
-                <p class="work-date">
-                    September 24, 2023 /  Happy Earth Festa 2023 @Itochu SDGS studio
-                </p>
-            </div>
-        </a>
-        <a class="work" href="works/tree_hack.html">
-            <img src="imgs/works/rhino_exib.JPG" width="200px" class="work-img">
-            <div class="descr">
-                <p class="work-title">movable drawings for movable architecture</p>
-                <p class="work-date">
-                    June 30, 2023 / exhibition for vertical review ＠TUS
-                </p>
-            </div>
-        </a>
-        <a class="work" href="works/narativerse.html">
-            <img src="imgs/works/ttbyc_3.PNG" width="200px" class="work-img">
-            <div class="descr">
-                <p class="work-title">Project Narativerse</p>
-                <p class="work-date">
-                    Apr, 2023/ ongoing 
-                </p>
-            </div>
-        </a>
-        <a class="work" href="works/climate_view.html">
-            <img src="imgs/works/climate_top.png" width="200px" class="work-img">
-            <div class="descr">
-                <p class="work-title">climate view</p>
-                <p class="work-date">
-                    October 16, 2021 /  CLIMATE LIVE JAPAN 2022 ＠Shibuya WWW/WWX
-                </p>
-            </div>
-        </a>
-        <a class="work" href="works/space_delivery.html">
-            <img src="imgs/works/spacedelivery_top.png" width="200px" class="work-img">
-            <div class="descr">
-                <p class="work-title">space delivery</p>
-                <p class="work-date">
-                    November, 2020 / Online School Festival (TUS)
-                </p>
-            </div>
-        </a>
-        <a class="work" href="works/haru.html">
-            <img src="imgs/works/haruwomatou_first.png" width="200px" class="work-img">
-            <div class="descr">
-                <p class="work-title">haruwo "matou"</p>
-                <p class="work-date">
-                    April 5, 2021 / @Unga Station Gallery
-                </p>
-            </div>
-        </a>
-        <a class="work" href="works/gyoza.html">
-            <img src="imgs/works/gyoza_top.jpeg" width="200px" class="work-img">
-            <div class="descr">
-                <p class="work-title">augmented GYOZA</p>
-                <p class="work-date">
-                    November 3, 2021 / HATCH Asakusa Autumn Festival
-                </p>
-            </div>
-        </a>
-        <a class="home" href="index.html">
-            <p>🏠</p>
-        </a>
-    </div>
+<body>
+  <div class="card">
+    <h1>ポートフォリオサイトを移転しました</h1>
+    <p>
+      このページは新しいURLに移転しました。<br>
+      自動的に移動しない場合は、下のボタンをクリックしてください。
+    </p>
+    <a class="btn" href="https://example.jp/">新しいサイトへ移動する</a>
+    <p class="note">3秒後に自動的に移動します</p>
+  </div>
 </body>
 </html>

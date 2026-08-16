@@ -1,45 +1,91 @@
-<!-- Hello ! friend ! -->
 
+Redirect · HTML
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css"></link>
-    <title>tom shinada</title>
-    <!-- <script src="https://code.createjs.com/1.0.0/tweenjs.min.js"></script>
-    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script> -->
-    <!-- <script src="
-https://cdn.jsdelivr.net/npm/tweenjs@1.0.2/lib/tweenjs.min.js
-"></script> -->
+  <meta charset="UTF-8">
+  <title>ページが移転しました</title>
+ 
+  <!-- 3秒後に自動的に新URLへ移動 -->
+  <meta http-equiv="refresh" content="3; url=https://tomshinada.jp/">
+ 
+  <!-- 検索エンジンに移転を伝える(SEO対策) -->
+  <link rel="canonical" href="https://tomshinada.jp/">
+ 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+ 
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans", Meiryo, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+    }
+ 
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 48px 32px;
+      max-width: 420px;
+      width: 100%;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    }
+ 
+    h1 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+ 
+    p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 28px;
+    }
+ 
+    a.btn {
+      display: inline-block;
+      background: #222;
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 32px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+    }
+ 
+    a.btn:hover {
+      opacity: 0.8;
+    }
+ 
+    .note {
+      margin-top: 20px;
+      font-size: 0.8rem;
+      color: #999;
+    }
+  </style>
 </head>
 <body>
-    <div class="name_container">
-        <a class="name" id = "t" href="bio.html">T</a>
-        <p class="name" id="o">O</p>
-        <p class="name" id="m">M</p>
-    </div>
-    <a class="icon" id = "camera" href="photos.html">
-        <p id="camera-img">📷</p>
-    </a>
-    <a class="icon" id="make" href="https://computerlife.stores.jp">
-        <p id="make-img">🔨</p>
-    </a>
-    <a class="icon" id="pc" href="works.html">
-        <span id="pc-img">🖥️</span>
-    </a>
-    <a class="icon" id="random">
-        <p>🥠</p>
-    </a>
-    <div id="hover">
-        <p class="hover-word"></p>
-        <!-- Go to a random place -->
-    </div>
-    <a id="index-comment" href="plau/index.html">studio plau</a>
-    <a class="icon" id="flower" href="https://buymeacoffee.com/tom.shinada">
-        <p> ☕️ </p>
-    </a>
-    <script src="index_motion_mouse.js" type="module"></script>
-    <script src="fortune_cookie.js"></script>
+  <div class="card">
+    <h1>ポートフォリオサイトを移転しました</h1>
+    <p>
+      このページは新しいURLに移転しました。<br>
+      自動的に移動しない場合は、下のボタンをクリックしてください。
+    </p>
+    <a class="btn" href="https://example.jp/">新しいサイトへ移動する</a>
+    <p class="note">3秒後に自動的に移動します</p>
+  </div>
 </body>
 </html>
