@@ -333,6 +333,8 @@ a {
 }
 
 .work-img {
+    width: 280px;
+    height: auto;
     /* box-shadow: 10px 10px 30px rgb(91, 91, 91); */
 }
 
@@ -382,6 +384,9 @@ a {
     }
     .work-title {
         font-size:1rem;
+    }
+    .work-img {
+        width: min(280px, 80vw);
     }
     .work-date {
         font-size:0.7rem;
